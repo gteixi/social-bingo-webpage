@@ -1,0 +1,31 @@
+.mainContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  margin: 1.5em;
+}
+
+.block__text {
+  margin: 1em;
+  text-align: center;
+}
+
+.block__answers {
+  display: flex;
+  justify-content: space-around;
+  margin: 1.5em 6em 0 6em;
+}
+
+.socialMedia {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1em;
+  padding: 1em;
+}
