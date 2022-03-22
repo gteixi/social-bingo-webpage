@@ -1,0 +1,47 @@
+.mainContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+}
+
+.header {
+  margin: 1.5em;
+}
+
+.block__text {
+  margin: 1em;
+  text-align: center;
+}
+
+.block__answers {
+  display: flex;
+  justify-content: space-around;
+  margin: 1.5em 5em 0 5em;
+
+  &__yes,
+  &__or,
+  &__no {
+    color: black;
+    font-size: 2em;
+    font-weight: 400;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.socialMedia {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1em;
+  padding: 1em;
+}
+
+.socialMedia__logo {
+  height: 50px;
+}
