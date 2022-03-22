@@ -8,7 +8,7 @@ import Home from "./pages/home/Home";
 import Pictures from "./pages/pictures/Pictures";
 import Welcome from "./pages/welcome/Welcome";
 
-import "./App.css";
+import "./App.scss";
 
 function App() {
   return (
