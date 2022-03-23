@@ -1,0 +1,41 @@
+.footerContainer {
+  border: solid 1px black;
+  padding: 1em;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &__firstRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0.5em 0 1em 0;
+    width: 100%;
+  }
+
+  &__logoInfo {
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      margin-right: 0.5em;
+    }
+  }
+
+  &__mail {
+    max-width: 150px;
+    overflow-wrap: break-word;
+  }
+
+  &__secondRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0.5em;
+  }
+}

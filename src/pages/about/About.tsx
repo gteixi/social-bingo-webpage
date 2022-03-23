@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../../components/Footer/Footer";
 import MenuHeader from "../../components/MenuHeader/MenuHeader";
 
 import "./About.scss";
@@ -38,6 +39,7 @@ function About() {
             </p>
           </div>
         </div>
+        <Footer />
       </div>
     </>
   );
