@@ -1,9 +1,7 @@
-.mainContainer {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+@import "./../../styles/mixins.scss";
+
+.welcomeContainer {
+  @include flex-column-center;
   background-color: #8ec5fc;
   background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
 }
@@ -25,23 +23,11 @@
   &__yes,
   &__or,
   &__no {
-    color: black;
-    font-size: 2em;
-    font-weight: 400;
-    text-decoration: none;
+    @include font-subtitle;
     cursor: pointer;
   }
 }
 
 .socialMedia {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 1em;
-  padding: 1em;
-}
-
-.socialMedia__logo {
-  height: 50px;
+  @include social-media-styles;
 }
