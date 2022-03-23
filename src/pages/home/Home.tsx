@@ -7,11 +7,23 @@ import "./Home.scss";
 function Home() {
   return (
     <div className="homeContainer">
-      <Link to="/about">QUI SOM</Link>
-      <Link to="/description">QUÈ ÉS UN BINGO MUSICAL</Link>
-      {/* <Link to="/description_more">INSTRUCCIONS</Link> */}
-      <Link to="/pictures">FOTOS</Link>
-      <Link to="/contact">CONTRACTANS</Link>
+      {/* UNMUTE COMPONENT */}
+      <div className="header">[ UNMUTE ]</div>
+      <div className="homeContainer__menu">
+        <Link className="homeContainer__menu__text" to="/about">
+          QUI SOM
+        </Link>
+        <Link className="homeContainer__menu__text" to="/description">
+          QUÈ ÉS UN BINGO MUSICAL
+        </Link>
+        {/* <Link className="homeContainer__menu__text" to="/description_more">INSTRUCCIONS</Link> */}
+        <Link className="homeContainer__menu__text" to="/pictures">
+          FOTOS
+        </Link>
+        <Link className="homeContainer__menu__text" to="/contact">
+          CONTRACTANS
+        </Link>
+      </div>
       <div className="socialMedia">
         <SocialMedia />
       </div>

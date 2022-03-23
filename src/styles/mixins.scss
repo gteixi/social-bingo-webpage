@@ -1,0 +1,39 @@
+@mixin flex-column-center {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin social-media-styles {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1em;
+  padding: 1em;
+}
+
+// FONTS
+
+@mixin font-title {
+  color: black;
+  font-size: 2em;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@mixin font-subtitle {
+  color: black;
+  font-size: 2em;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@mixin font-text() {
+  color: black;
+  font-size: 1em;
+  font-weight: 0;
+  text-decoration: none;
+}
