@@ -1,5 +1,5 @@
 @mixin flex-column-center {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -31,9 +31,10 @@
   text-decoration: none;
 }
 
-@mixin font-text() {
+@mixin font-text {
   color: black;
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: 0;
   text-decoration: none;
+  text-align: center;
 }

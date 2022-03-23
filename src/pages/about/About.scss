@@ -1,0 +1,19 @@
+@import "./../../styles/mixins.scss";
+
+.aboutContainer {
+  @include flex-column-center;
+  background-color: #fbab7e;
+  background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+
+  .block {
+    &__title {
+      @include font-title;
+      margin: 2em 0 1em 0;
+      text-decoration: underline black;
+      text-align: center;
+    }
+    &__text {
+      @include font-text;
+    }
+  }
+}
