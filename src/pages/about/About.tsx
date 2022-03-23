@@ -26,16 +26,6 @@ function About() {
               Es per això que després de 4 anys hem volgut crear un nou projecte
               on poder barrejar tot tipus de cançons presentan el BINGO MUSICAL
               ple de sorpreses i ganes de diversió.
-              <br />
-              <br />
-              Es per això que després de 4 anys hem volgut crear un nou projecte
-              on poder barrejar tot tipus de cançons presentan el BINGO MUSICAL
-              ple de sorpreses i ganes de diversió.
-              <br />
-              <br />
-              Es per això que després de 4 anys hem volgut crear un nou projecte
-              on poder barrejar tot tipus de cançons presentan el BINGO MUSICAL
-              ple de sorpreses i ganes de diversió.
             </p>
           </div>
         </div>
