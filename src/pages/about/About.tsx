@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../../components/Footer/Footer";
 import MenuHeader from "../../components/MenuHeader/MenuHeader";
 
 import "./About.scss";
@@ -8,12 +9,12 @@ function About() {
     <>
       <MenuHeader />
       <div className="aboutContainer">
-        <div className="block">
+        <div className="aboutContainer__block">
           <div>
-            <p className="block__title">QUI SOM</p>
+            <p className="aboutContainer__block__title">QUI SOM</p>
           </div>
           <div>
-            <p className="block__text">
+            <p className="aboutContainer__block__text">
               Som la Social, un grup de disco i funk del poblenou, barcelona amb
               més de 4 anys d’experiencia tocant sobre els escenaris.
               <br />
@@ -25,19 +26,10 @@ function About() {
               Es per això que després de 4 anys hem volgut crear un nou projecte
               on poder barrejar tot tipus de cançons presentan el BINGO MUSICAL
               ple de sorpreses i ganes de diversió.
-              <br />
-              <br />
-              Es per això que després de 4 anys hem volgut crear un nou projecte
-              on poder barrejar tot tipus de cançons presentan el BINGO MUSICAL
-              ple de sorpreses i ganes de diversió.
-              <br />
-              <br />
-              Es per això que després de 4 anys hem volgut crear un nou projecte
-              on poder barrejar tot tipus de cançons presentan el BINGO MUSICAL
-              ple de sorpreses i ganes de diversió.
             </p>
           </div>
         </div>
+        <Footer />
       </div>
     </>
   );

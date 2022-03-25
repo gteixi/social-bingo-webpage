@@ -8,7 +8,7 @@ function MenuHeader() {
       <img
         className="headerContainer__logo"
         src="./../assets/music-menu.png"
-        alt="a"
+        alt="Music Logo"
       />
       <p className="headerContainer__text">menú</p>
     </header>
