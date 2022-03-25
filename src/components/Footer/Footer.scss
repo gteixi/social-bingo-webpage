@@ -5,14 +5,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
-  &__firstRow {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0.5em 0 1em 0;
-    width: 100%;
-  }
+  align-items: baseline;
 
   &__logoInfo {
     height: 20px;
@@ -20,22 +13,17 @@
     flex-direction: row;
     flex-grow: 1;
     justify-content: center;
-    align-items: center;
+    align-self: center;
+  }
 
-    img {
-      margin-right: 0.5em;
+  img {
+    margin-right: 0.5em;
+    align-self: center;
+  }
+
+  @media (max-width: 480px) {
+    &__logoInfo {
+      margin: 0.5em;
     }
-  }
-
-  &__mail {
-    max-width: 150px;
-    overflow-wrap: break-word;
-  }
-
-  &__secondRow {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 0.5em;
   }
 }

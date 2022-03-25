@@ -7,22 +7,22 @@ function Welcome() {
   return (
     <div className="welcomeContainer">
       {/* UNMUTE COMPONENT */}
-      <div className="header">[ UNMUTE ]</div>
-      <div className="block">
-        <div className="block__text">
+      <div className="welcomeContainer__header">[ UNMUTE ]</div>
+      <div className="welcomeContainer__block">
+        <div className="welcomeContainer__block__text">
           <h1>PREPARAT PER CANTAR BINGO?</h1>
         </div>
-        <div className="block__answers">
-          <a href="/home" className="block__answers__yes">
+        <div className="welcomeContainer__block__answers">
+          <a href="/home" className="welcomeContainer__block__answers--yes">
             SI
           </a>
-          <p className="block__answers__or">/</p>
-          <a href="/" className="block__answers__no">
+          <p className="welcomeContainer__block__answers--or">/</p>
+          <a href="/" className="welcomeContainer__block__answers--no">
             NO
           </a>
         </div>
       </div>
-      <div className="socialMedia">
+      <div className="welcomeContainer__socialMedia">
         <SocialMedia />
       </div>
     </div>
