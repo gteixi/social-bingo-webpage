@@ -9,12 +9,12 @@ function About() {
     <>
       <MenuHeader />
       <div className="aboutContainer">
-        <div className="block">
+        <div className="aboutContainer__block">
           <div>
-            <p className="block__title">QUI SOM</p>
+            <p className="aboutContainer__block__title">QUI SOM</p>
           </div>
           <div>
-            <p className="block__text">
+            <p className="aboutContainer__block__text">
               Som la Social, un grup de disco i funk del poblenou, barcelona amb
               més de 4 anys d’experiencia tocant sobre els escenaris.
               <br />
