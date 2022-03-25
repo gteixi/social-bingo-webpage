@@ -19,9 +19,9 @@
 
 @mixin font-title {
   color: black;
+  text-decoration: underline black;
   font-size: 2em;
   font-weight: bold;
-  text-decoration: none;
 }
 
 @mixin font-subtitle {
