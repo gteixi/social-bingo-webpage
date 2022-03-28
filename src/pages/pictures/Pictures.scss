@@ -1,0 +1,27 @@
+@import "./../../styles/mixins.scss";
+
+.picturesContainer {
+  @include flex-column-center;
+  justify-content: center;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/5c/Disco_de_Vinilo.jpg");
+  background-size: 80px;
+  background-repeat: repeat;
+
+  &__carrousel {
+    border-radius: 80%;
+    overflow: hidden;
+    display: flex;
+    margin-top: 2em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__button {
+    margin: 1em;
+    @include font-subtitle;
+    border-style: none;
+    color: yellow;
+    background: none;
+  }
+}
