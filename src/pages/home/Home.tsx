@@ -21,7 +21,7 @@ function Home() {
           FOTOS
         </Link>
         <Link className="homeContainer__menu__text" to="/contact">
-          CONTRACTANS
+          CONTACTE
         </Link>
       </div>
       <div className="homeContainer__socialMedia">

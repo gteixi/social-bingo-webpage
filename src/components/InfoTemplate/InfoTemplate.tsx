@@ -4,7 +4,7 @@ import "./InfoTemplate.scss";
 
 interface InfoTemplateProps {
   title: string;
-  text: string;
+  text: string | string[];
 }
 
 function InfoTemplate({ title, text }: InfoTemplateProps) {
@@ -14,8 +14,14 @@ function InfoTemplate({ title, text }: InfoTemplateProps) {
         <div>
           <p className="InfoTemplateContainer__block__title">{title}</p>
         </div>
-        <div>
-          <p className="InfoTemplateContainer__block__text">{text}</p>
+        <div className="InfoTemplateContainer__block__gap">
+          {Array.isArray(text) ? (
+            text.map((smallText) => (
+              <p className="InfoTemplateContainer__block__text">{smallText}</p>
+            ))
+          ) : (
+            <p className="InfoTemplateContainer__block__text">{text}</p>
+          )}
         </div>
       </div>
     </div>

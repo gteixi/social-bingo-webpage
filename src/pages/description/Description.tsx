@@ -12,9 +12,12 @@ function Description() {
       <div className="descriptionContainer">
         <InfoTemplate
           title="QUÈ ÉS UN BINGO MUSICAL"
-          text="T’imagines ballar mentres guanyes premis?
+          text={[
+            `T’imagines ballar mentres guanyes premis?`,
+            `
 
-          Disposareu dels clàssics cartrons de Bingo pero aquest cop en canvi de números hi haurà els títols de les cançons que haureu d’anar esbrinant a mesura que les aneu sentint, perquè sí, la música serà en directe."
+          Disposareu dels clàssics cartrons de Bingo pero aquest cop en canvi de números hi haurà els títols de les cançons que haureu d’anar esbrinant a mesura que les aneu sentint, perquè sí, la música serà en directe.`,
+          ]}
         />
         <p className="descriptionContainer__title">INSTRUCCIONS</p>
         <div className="descriptionContainer__steps">
