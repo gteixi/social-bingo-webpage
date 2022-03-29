@@ -1,0 +1,38 @@
+@import "./../../styles/mixins.scss";
+
+.headerContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  backdrop-filter: brightness(60%);
+  backdrop-filter: blur(2px);
+
+  p {
+    color: black;
+    font-size: medium;
+  }
+
+  &__logo {
+    margin-top: 0.3em;
+    margin-right: 0.6em;
+  }
+
+  &__socialMedia {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin-top: 30%;
+  }
+}
+
+.menu__text {
+  text-decoration: none;
+  color: white;
+}
