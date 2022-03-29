@@ -10,7 +10,7 @@ function Welcome() {
       <div className="welcomeContainer__header">[ UNMUTE ]</div>
       <div className="welcomeContainer__block">
         <div className="welcomeContainer__block__text">
-          <h1>PREPARAT PER CANTAR BINGO?</h1>
+          <h1>READY PER CANTAR BINGO?</h1>
         </div>
         <div className="welcomeContainer__block__answers">
           <a href="/home" className="welcomeContainer__block__answers--yes">
