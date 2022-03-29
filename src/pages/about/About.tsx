@@ -1,14 +1,15 @@
 import React from "react";
 import Footer from "../../components/Footer/Footer";
-import MenuHeader from "../../components/MenuHeader/MenuHeader";
+
 import InfoTemplate from "../../components/InfoTemplate/InfoTemplate";
+import Menu from "../../components/Menu/Menu";
 
 import "./About.scss";
 
 function About() {
   return (
     <>
-      <MenuHeader />
+      <Menu />
       <div className="aboutContainer">
         <InfoTemplate
           title="QUI SOM"
