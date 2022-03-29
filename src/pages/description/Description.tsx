@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "../../components/Footer/Footer";
-import MenuHeader from "../../components/MenuHeader/MenuHeader";
+import Menu from "../../components/Menu/Menu";
 import InfoTemplate from "../../components/InfoTemplate/InfoTemplate";
 
 import "./Description.scss";
@@ -8,7 +8,7 @@ import "./Description.scss";
 function Description() {
   return (
     <>
-      <MenuHeader />
+      <Menu />
       <div className="descriptionContainer">
         <InfoTemplate
           title="QUÈ ÉS UN BINGO MUSICAL"
