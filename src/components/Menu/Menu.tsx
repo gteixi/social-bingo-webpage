@@ -11,7 +11,11 @@ import SocialMedia from "../SocialMedia/SocialMedia";
 
 import "./Menu.scss";
 
-function Menu() {
+interface MenuProps {
+  withColor?: boolean;
+}
+
+function Menu({ withColor = false }: MenuProps) {
   const drawerWidth = 240;
 
   const DrawerHeader = styled("div")(({ theme }) => ({
@@ -34,7 +38,11 @@ function Menu() {
 
   return (
     <>
-      <header className="headerContainer">
+      <header
+        className={`headerContainer ${
+          withColor ? "headerContainer--withColor" : ""
+        }`}
+      >
         <IconButton
           onClick={handleDrawerOpen}
           style={{ backgroundColor: "transparent" }}

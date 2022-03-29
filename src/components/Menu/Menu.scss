@@ -12,6 +12,10 @@
   backdrop-filter: brightness(60%);
   backdrop-filter: blur(2px);
 
+  &--withColor {
+    background-color: #c5322a;
+  }
+
   &__text {
     color: black;
     font-size: medium;
