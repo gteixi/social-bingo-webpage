@@ -18,6 +18,7 @@ module.exports = {
     "no-use-before-define": "off",
     "@typescript-eslint/no-use-before-define": ["error"],
     "react/jsx-filename-extension": [1, { extensions: [".tsx", ".jsx"] }],
+    "react/require-default-props": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
