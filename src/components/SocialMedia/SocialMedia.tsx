@@ -35,7 +35,7 @@ function SocialMedia({ size }: SocialMediaProps) {
   return (
     <>
       {logoRoute.map((logo) => (
-        <a href={`${logo.link}`}>
+        <a href={`${logo.link}`} key={logo.name}>
           <img
             className={size ? "socialMedia__logoMenu" : "socialMedia__logoPage"}
             src={`${logo.image}`}
