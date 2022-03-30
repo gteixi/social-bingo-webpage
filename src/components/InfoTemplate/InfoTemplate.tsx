@@ -17,7 +17,9 @@ function InfoTemplate({ title, text }: InfoTemplateProps) {
         <div className="InfoTemplateContainer__block__gap">
           {Array.isArray(text) ? (
             text.map((smallText) => (
-              <p className="InfoTemplateContainer__block__text">{smallText}</p>
+              <p className="InfoTemplateContainer__block__text" key={smallText}>
+                {smallText}
+              </p>
             ))
           ) : (
             <p className="InfoTemplateContainer__block__text">{text}</p>
