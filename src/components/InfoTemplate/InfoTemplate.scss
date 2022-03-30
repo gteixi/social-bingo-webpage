@@ -19,5 +19,8 @@
     &__gap {
       gap: 1;
     }
+    @media (min-width: 960px) {
+      width: 65%;
+    }
   }
 }

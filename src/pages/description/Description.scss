@@ -29,5 +29,8 @@
       text-align: end;
       align-self: flex-end;
     }
+    @media (min-width: 960px) {
+      width: 65%;
+    }
   }
 }
