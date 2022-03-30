@@ -93,7 +93,7 @@ function Menu({ withColor = false }: MenuProps) {
             { text: "FOTOS", link: "/pictures" },
             { text: "CONTACTE", link: "/contact" },
           ].map((index) => (
-            <a className="menu__text" href={index.link}>
+            <a className="menu__text" href={index.link} key={index.link}>
               <ListItem
                 button
                 key={index.text}

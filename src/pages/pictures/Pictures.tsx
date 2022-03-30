@@ -43,7 +43,7 @@ function Pictures() {
             centerSlidePercentage={width > 480 ? 100 : 200}
           >
             {images.map((image) => (
-              <div>
+              <div key={image}>
                 <img className="lala" src={String(image)} alt="test" />
               </div>
             ))}
