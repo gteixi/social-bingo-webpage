@@ -3,7 +3,7 @@
 .picturesContainer {
   @include flex-column-center;
   justify-content: center;
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/5c/Disco_de_Vinilo.jpg");
+  background-image: url("./../../../public/assets/background/vinil.jpg");
   background-size: 80px;
   background-repeat: repeat;
 
