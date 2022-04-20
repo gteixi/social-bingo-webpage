@@ -38,3 +38,11 @@
   text-decoration: none;
   text-align: center;
 }
+
+@mixin font-socialMedia-text {
+  color: black;
+  font-size: 1.3em;
+  font-weight: 0;
+  text-decoration: none;
+  text-align: center;
+}

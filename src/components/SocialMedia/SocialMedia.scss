@@ -15,6 +15,7 @@
 }
 .socialMediaContainer {
   &__block {
+    width: 90%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -23,6 +24,6 @@
 
   &__name {
     margin: 0 0.5em;
-    @include font-text;
+    @include font-socialMedia-text;
   }
 }
