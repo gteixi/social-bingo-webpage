@@ -14,6 +14,10 @@
     brightness(100%) contrast(34320%);
 }
 .socialMediaContainer {
+  img {
+    width: 55px;
+  }
+
   &__block {
     width: 90%;
     display: flex;
