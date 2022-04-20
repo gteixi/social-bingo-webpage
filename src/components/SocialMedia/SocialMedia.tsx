@@ -4,9 +4,10 @@ import "./SocialMedia.scss";
 
 interface SocialMediaProps {
   size?: boolean;
+  withDescription?: boolean;
 }
 
-function SocialMedia({ size }: SocialMediaProps) {
+function SocialMedia({ size, withDescription }: SocialMediaProps) {
   const logoRoutePath = "./assets/socialMedia/";
 
   const logoRoute = [
@@ -32,7 +33,7 @@ function SocialMedia({ size }: SocialMediaProps) {
     },
   ];
 
-  return (
+  return !withDescription ? (
     <>
       {logoRoute.map((logo) => (
         <a href={`${logo.link}`} key={logo.name}>
@@ -42,6 +43,23 @@ function SocialMedia({ size }: SocialMediaProps) {
             alt={`${logo.name}`}
           />
         </a>
+      ))}
+    </>
+  ) : (
+    <>
+      {logoRoute.map((logo) => (
+        <div className="socialMediaContainer">
+          <a href={`${logo.link}`} key={logo.name}>
+            <div className="socialMediaContainer__block">
+              <img
+                className="socialMediaContainer__name"
+                src={`${logo.image}`}
+                alt={`${logo.name}`}
+              />
+              <p className="socialMediaContainer__name">@lasocialdisfunktion</p>
+            </div>
+          </a>
+        </div>
       ))}
     </>
   );
