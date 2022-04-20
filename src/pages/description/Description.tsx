@@ -13,18 +13,18 @@ function Description() {
         <InfoTemplate
           title="QUÈ ÉS UN BINGO MUSICAL"
           text={[
-            `T’imagines ballar mentres guanyes premis?`,
+            `T’imagines ballar mentre guanyes premis?`,
             `
 
-          Disposareu dels clàssics cartrons de Bingo pero aquest cop en canvi de números hi haurà els títols de les cançons que haureu d’anar esbrinant a mesura que les aneu sentint, perquè sí, la música serà en directe.`,
+            Disposareu dels clàssics cartrons de Bingo però aquest cop, en comptes de números, hi haurà els títols de les cançons que haureu d’anar esbrinant a mesura que les aneu sentint. Perquè sí, la música serà en directe.`,
           ]}
         />
         <h1 className="descriptionContainer__title">INSTRUCCIONS</h1>
         <div className="descriptionContainer__steps">
           <p>STEP 1: COMPRA EL TEU CARTRÓ A LA BARRA.</p>
           <p>
-            STEP 2:ESTIGUES PUNTUAL DAVANT L’ESCENARI PER COMENÇAR A SENTIR LES
-            CANÇONS DEL REPERTORI.
+            STEP 2: SIGUES PUNTUAL DAVANT DE L’ESCENARI PER COMENÇAR A SENTIR
+            LES CANÇONS DEL REPERTORI.
           </p>
           <p>
             STEP 3: IDENTIFICA EL TÍTOL DE LA CANÇÓ DEL REPERTORI QUE ANEM
@@ -34,8 +34,8 @@ function Description() {
           <p>STEP 4: BÚSCA EL TÍTOL DE LA CANÇÓ AL TEU CARTRÓ I TATXA’L!</p>
 
           <p>
-            STEP 5: ESTIGUES ATENT DE FER LÍNEA O BINGO I SI ES AIXÍ CRIDA I
-            APROPA’T AL ESCENARI PER FER LA RESPECTIVA COMPROVACIÓ.
+            STEP 5: ESTIGUES ATENT QUAN FACIS LÍNEA O BINGO I, SI ES AIXÍ, CRIDA
+            I APROPA’T A L´ESCENARI PER FER LA RESPECTIVA COMPROVACIÓ.
           </p>
         </div>
         <Footer />
