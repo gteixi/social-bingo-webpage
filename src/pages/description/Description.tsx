@@ -19,7 +19,7 @@ function Description() {
           Disposareu dels clàssics cartrons de Bingo pero aquest cop en canvi de números hi haurà els títols de les cançons que haureu d’anar esbrinant a mesura que les aneu sentint, perquè sí, la música serà en directe.`,
           ]}
         />
-        <p className="descriptionContainer__title">INSTRUCCIONS</p>
+        <h1 className="descriptionContainer__title">INSTRUCCIONS</h1>
         <div className="descriptionContainer__steps">
           <p>STEP 1: COMPRA EL TEU CARTRÓ A LA BARRA.</p>
           <p>
