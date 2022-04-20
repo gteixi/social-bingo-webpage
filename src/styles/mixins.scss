@@ -41,8 +41,9 @@
 
 @mixin font-socialMedia-text {
   color: black;
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: 0;
   text-decoration: none;
   text-align: center;
+  word-break: break-all;
 }
