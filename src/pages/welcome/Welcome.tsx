@@ -17,7 +17,10 @@ function Welcome() {
             SI
           </a>
           <p className="welcomeContainer__block__answers--or">/</p>
-          <a href="/" className="welcomeContainer__block__answers--no">
+          <a
+            href="/com-que-no?"
+            className="welcomeContainer__block__answers--no"
+          >
             NO
           </a>
         </div>

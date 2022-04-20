@@ -1,0 +1,33 @@
+@import "./../../../styles/mixins.scss";
+
+.noOptionContainer {
+  @include flex-column-center;
+  justify-content: space-evenly;
+  background-size: 220px;
+  background-image: url("https://c.tenor.com/45TCFWmtCQQAAAAd/crying-the-office.gif");
+
+  &__container {
+    margin: 1em;
+    text-align: center;
+
+    &-text {
+      @include font-subtitle;
+      color: #fad02c;
+    }
+  }
+
+  &__backButton {
+    display: flex;
+    justify-content: space-around;
+    margin: 1.5em 5em 0 5em;
+
+    &--back {
+      background-color: black;
+      border-radius: 50%;
+      padding: 1em;
+      font-size: 1rem;
+      color: #fad02c;
+      cursor: pointer;
+    }
+  }
+}
