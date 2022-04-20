@@ -1,3 +1,9 @@
+@import "./../../styles/mixins.scss";
+
+* {
+  text-decoration: none;
+}
+
 .socialMedia__logoPage {
   height: 50px;
 }
@@ -6,4 +12,17 @@
   height: 20px;
   filter: invert(789%) sepia(0%) saturate(500%) hue-rotate(10deg)
     brightness(100%) contrast(34320%);
+}
+.socialMediaContainer {
+  &__block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1.5em;
+  }
+
+  &__name {
+    margin: 0 0.5em;
+    @include font-text;
+  }
 }

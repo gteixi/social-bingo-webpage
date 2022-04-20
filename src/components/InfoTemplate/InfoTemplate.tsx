@@ -4,7 +4,7 @@ import "./InfoTemplate.scss";
 
 interface InfoTemplateProps {
   title: string;
-  text: string | string[];
+  text?: string | string[];
 }
 
 function InfoTemplate({ title, text }: InfoTemplateProps) {
