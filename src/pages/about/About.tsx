@@ -14,15 +14,11 @@ function About() {
         <InfoTemplate
           title="QUI SOM"
           text={[
-            `Som la Social, un grup de disco i funk del poblenou, barcelona amb
-            més de 4 anys d’experiencia tocant sobre els escenaris.`,
+            `Som La Social, un grup de funk i disco del Poblenou (Barcelona) amb més de 4 anys d’experiència tocant als escenaris.`,
             `
-            Ens caracteritzem per la nostre versatilitat tocant temes dels anys
-            70 i 80 fins als hits de l’actualitat.`,
+            Ens caracteritzem per la nostre versatilitat tocant temes dels anys 70 i 80 fins als hits de l’actualitat.`,
             `
-            Es per això que després de 4 anys hem volgut crear un nou projecte
-            on poder barrejar tot tipus de cançons presentan el BINGO MUSICAL
-            ple de sorpreses i ganes de diversió.`,
+            És per això que després de 4 anys hem volgut crear un nou projecte on poder barrejar tot tipus de cançons presentant el BINGO MUSICAL ple de sorpreses i ganes de diversió.`,
           ]}
         />
         <Footer />

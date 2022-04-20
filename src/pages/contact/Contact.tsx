@@ -11,7 +11,7 @@ function Contact() {
     <>
       <Menu />
       <div className="contactContainer">
-        <InfoTemplate title="CONTACTANS" />
+        <InfoTemplate title="CONTACTA´NS" />
         {/* FORM IN PROGRESS
         <div>
           <p className="title">Contact Form</p>
