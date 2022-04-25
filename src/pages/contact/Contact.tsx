@@ -19,17 +19,20 @@ function Contact() {
     const name = target.name.value;
     const message = target.message.value;
 
-    const js = await fetch("http://localhost:4000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        name,
-        email,
-        message,
-      }),
-    });
+    const js = await fetch(
+      "https://social-bingo-backend.herokuapp.com/contact",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          message,
+        }),
+      }
+    );
     const text = js.text();
     console.log(text);
   };
