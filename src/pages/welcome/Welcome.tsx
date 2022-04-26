@@ -7,7 +7,7 @@ function Welcome() {
   return (
     <div className="welcomeContainer">
       {/* UNMUTE COMPONENT */}
-      <div className="welcomeContainer__header">[ UNMUTE ]</div>
+      <div className="welcomeContainer__header"> {/* UNMUTE COMPONENT */}</div>
       <div className="welcomeContainer__block">
         <div className="welcomeContainer__block__text">
           <h1>READY PER CANTAR BINGO?</h1>

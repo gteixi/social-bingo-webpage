@@ -8,7 +8,7 @@ function Home() {
   return (
     <div className="homeContainer">
       {/* UNMUTE COMPONENT */}
-      <div className="homeContainer__header">[ UNMUTE ]</div>
+      <div className="homeContainer__header"> {/* UNMUTE COMPONENT */}</div>
       <div className="homeContainer__menu">
         <Link className="homeContainer__menu__text" to="/about">
           QUI SOM
