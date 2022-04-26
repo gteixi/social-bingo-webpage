@@ -1,13 +1,17 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
-import React from "react";
-import Footer from "../../components/Footer/Footer";
-import InfoTemplate from "../../components/InfoTemplate/InfoTemplate";
+import React, { useState } from "react";
+
 import Menu from "../../components/Menu/Menu";
+import InfoTemplate from "../../components/InfoTemplate/InfoTemplate";
 import SocialMedia from "../../components/SocialMedia/SocialMedia";
+import Footer from "../../components/Footer/Footer";
 
 import "./Contact.scss";
 
 function Contact() {
+  const [successMessage, setSuccessMessage] = useState(false);
+  const [failureMessage, setFailureMessage] = useState(false);
+
   const handleSubmit = async (e: React.SyntheticEvent) => {
     e.preventDefault();
     const target = e.target as typeof e.target & {
@@ -15,51 +19,139 @@ function Contact() {
       name: { value: string };
       message: { value: string };
     };
+
     const email = target.email.value;
     const name = target.name.value;
     const message = target.message.value;
 
-    const js = await fetch(
-      "https://social-bingo-backend.herokuapp.com/contact",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name,
-          email,
-          message,
-        }),
-      }
-    );
-    const text = js.text();
-    console.log(text);
+    await fetch("https://social-bingo-backend.herokuapp.com/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name,
+        email,
+        message,
+      }),
+    })
+      .then(() => {
+        setSuccessMessage(true);
+      })
+      .catch(() => {
+        setFailureMessage(true);
+      });
   };
+
+  const goBack = () => {
+    setSuccessMessage(false);
+    setFailureMessage(false);
+  };
+
   return (
     <>
       <Menu />
       <div className="contactContainer">
         <InfoTemplate title="CONTACTA'NS" />
-        <div>
-          <h1>Contact Form</h1>
+        {successMessage && (
+          <div className="contactContainer__successContainer">
+            <div className="contactContainer__successContainer__block">
+              <p>BINGO!!! El teu missatge s´ha enviat correctament!</p>
+              <iframe
+                title="Disco Gif"
+                src="https://gifer.com/embed/7mnY"
+                frameBorder="0"
+                className="contactContainer__successContainer__img"
+              />
+              <div className="contactContainer__successContainer__containerButton">
+                <button
+                  className="contactContainer__successContainer__button"
+                  type="button"
+                  onClick={goBack}
+                >
+                  Enrere
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+        {failureMessage && (
+          <div className="contactContainer__successContainer">
+            <div className="contactContainer__successContainer__block">
+              <p>Oh no... Alguna cosa ha anat malament, torna-ho a intentar</p>
+              <iframe
+                title="Disco Gif"
+                src="https://giphy.com/embed/vKz8r5aTUFFJu"
+                frameBorder="0"
+                className="contactContainer__successContainer__img"
+              />
+              <div className="contactContainer__successContainer__containerButton">
+                <button
+                  className="contactContainer__successContainer__button"
+                  type="button"
+                  onClick={goBack}
+                >
+                  Enrere
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+        <div className="contactContainer__form">
           <form onSubmit={handleSubmit}>
-            <div>
-              <label htmlFor="name_field">Your Name</label>
-              <input placeholder="Enter Your Name" type="text" name="name" />
+            <div className="contactContainer__section">
+              <label
+                htmlFor="email_field"
+                className="contactContainer__section--label"
+              >
+                Mail
+              </label>
+              <input
+                placeholder="stevie@wonder.com"
+                className="contactContainer__section--input"
+                type="email"
+                name="email"
+                required
+              />
             </div>
-            <div>
-              <label htmlFor="email_field">Your Email</label>
-              <input placeholder="Enter Your Email" type="email" name="email" />
+            <div className="contactContainer__section">
+              <label
+                htmlFor="name_field"
+                className="contactContainer__section--label"
+              >
+                Nom
+              </label>
+              <input
+                placeholder="Stevie Wonder"
+                className="contactContainer__section--input"
+                type="text"
+                name="name"
+                required
+              />
             </div>
-            <div>
-              <label htmlFor="message_field">Message</label>
-              <textarea placeholder="Enter message here" name="message" />
+            <div className="contactContainer__section">
+              <label
+                htmlFor="message_field"
+                className="contactContainer__section--label"
+              >
+                Missatge
+              </label>
+              <textarea
+                placeholder="Vull que vingueu a les festes del meu poble!"
+                className="contactContainer__section--input"
+                name="message"
+                required
+              />
             </div>
-
-            <button type="submit" id="button">
-              Send
-            </button>
+            <div className="contactContainer__backButton">
+              <button
+                className="contactContainer__backButton--button"
+                type="submit"
+                id="button"
+              >
+                Enviar
+              </button>
+            </div>
           </form>
         </div>
         <InfoTemplate title="XARXES" />

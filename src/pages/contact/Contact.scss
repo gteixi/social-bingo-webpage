@@ -4,4 +4,114 @@
   @include flex-column-center;
   background-color: #cbcbcb;
   background-image: linear-gradient(135deg, #e6e6e6 0%, #c2c2c2 100%);
+
+  &__successContainer {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    word-break: keep-all;
+
+    &__block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+
+      padding: 2em;
+      background-color: #fad02c;
+      border: 2px solid black;
+    }
+
+    &__img {
+      padding-top: 1em;
+      width: 200px;
+      height: 200px;
+    }
+
+    &__containerButton {
+      display: flex;
+      justify-content: flex-end;
+      padding-top: 1.5em;
+    }
+
+    &__button {
+      background-color: #fad02c;
+      padding: 0.5em;
+      border-radius: 60%;
+      @include font-socialMedia-text;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-start;
+  }
+
+  textarea {
+    padding: 0.5em;
+    height: 5em;
+    word-break: keep-all;
+  }
+
+  iframe {
+    pointer-events: none;
+  }
+
+  &__section {
+    padding-bottom: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &--label {
+      @include font-socialMedia-text;
+      margin-right: 0.5em;
+    }
+
+    &--input {
+      border: 1px solid black;
+      margin: 0.5em;
+      @include font-socialMedia-text;
+    }
+  }
+
+  &__backButton {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1em;
+
+    &--button {
+      background-color: #fad02c;
+      padding: 0.5em;
+      border-radius: 60%;
+      @include font-socialMedia-text;
+    }
+  }
+
+  @media (max-width: 600px) {
+    &__form {
+      width: 70%;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+    }
+    &__section {
+      padding-bottom: 1em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
 }
