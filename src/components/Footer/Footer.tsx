@@ -7,7 +7,7 @@ function Footer() {
     <div className="footerContainer">
       <div className="footerContainer__logoInfo">
         <img src="./../../assets/whatsapp.png" alt="Whatsapp" />
-        <p>620868556</p>
+        <a href="https://wa.me/+34620868556">620868556</a>
       </div>
       <div className="footerContainer__logoInfo">
         <img src="./../../assets/mail.png" alt="Mail" />
