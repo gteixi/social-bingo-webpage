@@ -18,11 +18,9 @@ interface MenuProps {
 function Menu({ withColor = false }: MenuProps) {
   const drawerWidth = 240;
 
-  const DrawerHeader = styled("div")(({ theme }) => ({
+  const DrawerHeader = styled("div")(() => ({
     display: "flex",
     alignSelf: "flex-end",
-    padding: theme.spacing(0, 1),
-    ...theme.mixins.toolbar,
     justifyContent: "flex-end",
   }));
 
