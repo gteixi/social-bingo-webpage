@@ -16,6 +16,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-images": "^1.2.0-beta.7",
+    "react-loading": "^2.0.3",
     "react-photo-gallery": "^8.0.0",
     "react-router-dom": "6",
     "react-scripts": "5.0.0",

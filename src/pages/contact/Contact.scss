@@ -91,6 +91,8 @@
     padding-right: 1em;
 
     &--button {
+      display: flex;
+      align-items: center;
       background-color: #fad02c;
       padding: 0.5em;
       border-radius: 60%;

@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { useState } from "react";
+import ReactLoading from "react-loading";
 
 import Menu from "../../components/Menu/Menu";
 import InfoTemplate from "../../components/InfoTemplate/InfoTemplate";
@@ -11,8 +12,10 @@ import "./Contact.scss";
 function Contact() {
   const [successMessage, setSuccessMessage] = useState(false);
   const [failureMessage, setFailureMessage] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e: React.SyntheticEvent) => {
+    setLoading(true);
     e.preventDefault();
     const target = e.target as typeof e.target & {
       email: { value: string };
@@ -37,6 +40,7 @@ function Contact() {
     })
       .then(() => {
         setSuccessMessage(true);
+        setLoading(false);
       })
       .catch(() => {
         setFailureMessage(true);
@@ -145,11 +149,12 @@ function Contact() {
             </div>
             <div className="contactContainer__backButton">
               <button
-                className="contactContainer__backButton--button"
                 type="submit"
                 id="button"
+                className="contactContainer__backButton--button"
               >
                 Enviar
+                {loading && <ReactLoading type="bubbles" color="black" />}
               </button>
             </div>
           </form>
