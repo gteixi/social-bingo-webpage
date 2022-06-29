@@ -30,6 +30,22 @@ function Pictures() {
     { src: require("./images/pic6.jpg"), width: 4, height: 3 },
     { src: require("./images/pic7.jpg"), width: 4, height: 3 },
     { src: require("./images/pic8.jpg"), width: 4, height: 3 },
+    { src: require("./images/pic1.jpg"), width: 4, height: 3 },
+    { src: require("./images/pic2.jpg"), width: 4, height: 3 },
+    { src: require("./images/pic3.jpg"), width: 4, height: 3 },
+    { src: require("./images/pic4.jpg"), width: 4, height: 3 },
+    { src: require("./images/pic5.jpg"), width: 4, height: 3 },
+    { src: require("./images/pic6.jpg"), width: 4, height: 3 },
+    { src: require("./images/pic7.jpg"), width: 4, height: 3 },
+    { src: require("./images/pic8.jpg"), width: 4, height: 3 },
+    { src: require("./images/pic1.jpg"), width: 4, height: 3 },
+    { src: require("./images/pic2.jpg"), width: 4, height: 3 },
+    { src: require("./images/pic3.jpg"), width: 4, height: 3 },
+    { src: require("./images/pic4.jpg"), width: 4, height: 3 },
+    { src: require("./images/pic5.jpg"), width: 4, height: 3 },
+    { src: require("./images/pic6.jpg"), width: 4, height: 3 },
+    { src: require("./images/pic7.jpg"), width: 4, height: 3 },
+    { src: require("./images/pic8.jpg"), width: 4, height: 3 },
   ];
 
   return (
