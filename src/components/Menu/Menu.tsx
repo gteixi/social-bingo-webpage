@@ -47,7 +47,7 @@ function Menu({ withColor = false }: MenuProps) {
         >
           <img
             className="headerContainer__logo"
-            src="./../assets/music-menu.png"
+            src="./../assets/logo-menu.png"
             alt="Music Logo"
           />
           <p className="headerContainer__text">menú</p>
