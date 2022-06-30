@@ -21,6 +21,12 @@ function About() {
             És per això que després de 4 anys hem volgut crear un nou projecte on poder barrejar tot tipus de cançons presentant el BINGO MUSICAL ple de sorpreses i ganes de diversió.`,
           ]}
         />
+        <img
+          className="aboutContainer__gif"
+          src="./../../assets/social-gif.gif"
+          alt="La Social en directe"
+        />
+
         <Footer />
       </div>
     </>
