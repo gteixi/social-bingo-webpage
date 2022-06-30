@@ -3,31 +3,48 @@
 .noOptionContainer {
   @include flex-column-center;
   justify-content: space-evenly;
-  background-size: 220px;
-  background-image: url("https://c.tenor.com/45TCFWmtCQQAAAAd/crying-the-office.gif");
+  background-size: 380px;
+  background-image: url("../../../.././public/assets/disfunktion-logo.png");
 
-  &__container {
-    margin: 1em;
-    text-align: center;
+  &__goBack {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 1rem;
+    align-items: flex-start;
+    background-color: black;
 
-    &-text {
-      @include font-subtitle;
+    &--text {
+      margin: 0.5em;
+      font-size: 1.2rem;
+      text-decoration: none;
       color: #fad02c;
     }
   }
 
-  &__backButton {
+  &__container {
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__instagramButton {
     display: flex;
     justify-content: space-around;
-    margin: 1.5em 5em 0 5em;
+    padding: 2em;
+    padding-bottom: 1em;
 
     &--back {
-      background-color: black;
+      cursor: pointer;
+      text-align: center;
+      -webkit-text-stroke: 2px black;
+      font-weight: bolder;
       border-radius: 50%;
       padding: 1em;
-      font-size: 1rem;
+      font-size: 3rem;
       color: #fad02c;
-      cursor: pointer;
     }
   }
 }
