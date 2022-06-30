@@ -5,16 +5,18 @@ import "./NoOption.scss";
 function NoOption() {
   return (
     <div className="noOptionContainer">
-      <div className="noOptionContainer__container">
-        <h1 className="noOptionContainer__container-text">
-          OH... NOMÉS ACCEPTEM GANES DE PASSAR-HO BÉ AIXÍ QUE TORNA QUAN
-          ESTIGUIS PREPARAT!
-        </h1>
-        <div className="noOptionContainer__backButton">
-          <a href="/" className="noOptionContainer__backButton--back">
-            TORNAR ENRERE
-          </a>
-        </div>
+      <header className="noOptionContainer__goBack">
+        <a className="noOptionContainer__goBack--text" href="/">
+          tornar al bingo
+        </a>
+      </header>
+      <div className="noOptionContainer__instagramButton">
+        <a
+          href="https://www.instagram.com/lasocialdisfunktion/"
+          className="noOptionContainer__instagramButton--back"
+        >
+          CLICA AQUI
+        </a>
       </div>
     </div>
   );
