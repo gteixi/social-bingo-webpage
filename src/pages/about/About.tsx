@@ -22,11 +22,10 @@ function About() {
           ]}
         />
         <img
-          className="aboutContainer__gif"
-          src="./../../assets/social-gif.gif"
-          alt="La Social en directe"
+          className="aboutContainer__imgPresentacio"
+          src="./../../assets/fotoPresentacio.jpg"
+          alt="Foto grupal amb public"
         />
-
         <Footer />
       </div>
     </>
