@@ -47,10 +47,9 @@ function Menu({ withColor = false }: MenuProps) {
         >
           <img
             className="headerContainer__logo"
-            src="./../assets/logo-menu.png"
+            src="./../assets/lettering.png"
             alt="Music Logo"
           />
-          <p className="headerContainer__text">menú</p>
         </IconButton>
       </header>
 
@@ -83,11 +82,13 @@ function Menu({ withColor = false }: MenuProps) {
             justifyContent: "center",
             textAlign: "center",
             height: "80%",
+            width: "100%",
           }}
         >
           {[
+            { text: "INICI", link: "/" },
             { text: "QUI SOM", link: "/about" },
-            { text: "QUÈ ES UN BINGO MUSICAL", link: "/description" },
+            // { text: "QUÈ ES UN BINGO MUSICAL", link: "/description" },
             { text: "FOTOS", link: "/pictures" },
             { text: "CONTACTE", link: "/contact" },
           ].map((index) => (
