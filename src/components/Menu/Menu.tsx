@@ -90,7 +90,7 @@ function Menu({ withColor = false }: MenuProps) {
             { text: "QUI SOM", link: "/about" },
             // { text: "QUÈ ES UN BINGO MUSICAL", link: "/description" },
             { text: "FOTOS", link: "/pictures" },
-            { text: "CONTACTE", link: "/contact" },
+            // { text: "CONTACTE", link: "/contact" },
           ].map((index) => (
             <a className="menu__text" href={index.link} key={index.link}>
               <ListItem

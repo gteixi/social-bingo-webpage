@@ -33,6 +33,7 @@ function Welcome() {
 
   return (
     <div className="welcomeContainer">
+      <a href="/about">
       <div className="welcomeContainer__header">
         <img
           src="./../../assets/lettering.png"
@@ -40,6 +41,7 @@ function Welcome() {
           alt="Logo"
         />
       </div>
+        </a>
       <div className="welcomeContainer__block">
         <a href="/about" className="welcomeContainer__img">
           <img src="./../../assets/main-logo.png" alt="Logo" />
